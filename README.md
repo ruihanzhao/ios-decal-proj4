@@ -4,6 +4,9 @@
   - Ruihan Zhao
   - David Kong
 
+## Credits
+  - FacebookSDK for importing users' accounts and friend networks
+
 ## Purpose
   Library Friend Finder is an app that helps Berkeley students find their 
   friends in the library.
@@ -17,33 +20,43 @@
 ## Control Flow
   - After linking one's Facebook account, the splash screen will become 
   irrelevant for the user.
-  - The main view is a tab view with tabs for map, notifications,
+  - The application si a tab application with tabs for map, notifications,
   and requests.
   - Friends' locations will be marked on the map after clicking on
   notifications.
-  - Location requests can be responded to/ignored individually or collectively
-  in the requests tab.
+  - Clicking on pins will show a popover to identify friends/user
   - Sharing location from the map will pull up a list of Facebook friends with
   the app to share to.
 
 ## Implementation
 ### Model
-  - UserItem.Swift
-  - LibraryMap.gif
-  - LibraryTable.gif ///May need multiple table images
-  - LibrarySeat.gif
+  - Library.Swift
+  - User.Swift
 
 ### View
   - LibraryImageView embedded in UIScrollView
-  - LibraryTableListView ///If we map more than one library
+  - LibraryTableListView
   - NotificationsTableView
-  - RequestsTableView
-  - Chair.Swift // records ID of seat
-  - Table.Swift (possibly if we want to record IDs of tables)
+  - SearchFriendsView (table view of users friends with search bar)
+  - profileVC (popover views for pins)
+  - UIButtons for each pin to mark locations of people
 
 ### Controller
-  - LibraryImageViewController
+  - LibraryMapViewController (UIScrollViewController)
   - LibraryTableListViewController
   - NotificationsTableViewController
-  - RequestsTableViewController
-  - StartScreenViewController: For initial linking to Facebook
+  - FriendSearchController (Controller for searching)
+  - FacebookViewController (initial login & account link)
+
+## Shortcomings
+### Unimplemented Features
+  - Backend to actually send data between users
+  - Facebook login has been implemented but is not used (no 
+  backend: all users in demo are hardcoded)
+  - No requests feature
+
+### Known Bugs
+  - User's location marker can move while popover is up
+  - Pins are resized by the UIScrollView zoom
+  - View stacks between the Notifications tab and Library(map) is
+  not right

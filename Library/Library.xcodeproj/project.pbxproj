@@ -16,6 +16,10 @@
 		953F82E71CD05002002A0477 /* LibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F82E61CD05002002A0477 /* LibraryUITests.swift */; };
 		953F82F91CD05632002A0477 /* LibraryImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F82F81CD05632002A0477 /* LibraryImageViewController.swift */; };
 		953F82FB1CD05A1C002A0477 /* Chair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F82FA1CD05A1C002A0477 /* Chair.swift */; };
+		953F82FF1CD304A4002A0477 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F82FE1CD304A4002A0477 /* Table.swift */; };
+		953F83011CD30572002A0477 /* table.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 953F83001CD30572002A0477 /* table.jpg */; };
+		953F83031CD6E29F002A0477 /* lessWeirdChair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 953F83021CD6E29F002A0477 /* lessWeirdChair.jpg */; };
+		953F83091CD72850002A0477 /* ladySitting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 953F83081CD72850002A0477 /* ladySitting.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		953F82E81CD05002002A0477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		953F82F81CD05632002A0477 /* LibraryImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryImageViewController.swift; sourceTree = "<group>"; };
 		953F82FA1CD05A1C002A0477 /* Chair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chair.swift; sourceTree = "<group>"; };
+		953F82FE1CD304A4002A0477 /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		953F83001CD30572002A0477 /* table.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = table.jpg; path = ../../../../Downloads/table.jpg; sourceTree = "<group>"; };
+		953F83021CD6E29F002A0477 /* lessWeirdChair.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lessWeirdChair.jpg; path = ../../../../Downloads/lessWeirdChair.jpg; sourceTree = "<group>"; };
+		953F83081CD72850002A0477 /* ladySitting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ladySitting.jpg; path = ../../../../Downloads/ladySitting.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,10 @@
 				953F82C61CD05002002A0477 /* AppDelegate.swift */,
 				953F82C81CD05002002A0477 /* ViewController.swift */,
 				953F82FA1CD05A1C002A0477 /* Chair.swift */,
+				953F82FE1CD304A4002A0477 /* Table.swift */,
+				953F83081CD72850002A0477 /* ladySitting.jpg */,
+				953F83001CD30572002A0477 /* table.jpg */,
+				953F83021CD6E29F002A0477 /* lessWeirdChair.jpg */,
 				953F82F81CD05632002A0477 /* LibraryImageViewController.swift */,
 				953F82CA1CD05002002A0477 /* Main.storyboard */,
 				953F82CD1CD05002002A0477 /* Assets.xcassets */,
@@ -237,7 +249,10 @@
 			files = (
 				953F82D11CD05002002A0477 /* LaunchScreen.storyboard in Resources */,
 				953F82CE1CD05002002A0477 /* Assets.xcassets in Resources */,
+				953F83091CD72850002A0477 /* ladySitting.jpg in Resources */,
+				953F83031CD6E29F002A0477 /* lessWeirdChair.jpg in Resources */,
 				953F82CC1CD05002002A0477 /* Main.storyboard in Resources */,
+				953F83011CD30572002A0477 /* table.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				953F82F91CD05632002A0477 /* LibraryImageViewController.swift in Sources */,
+				953F82FF1CD304A4002A0477 /* Table.swift in Sources */,
 				953F82FB1CD05A1C002A0477 /* Chair.swift in Sources */,
 				953F82C91CD05002002A0477 /* ViewController.swift in Sources */,
 				953F82C71CD05002002A0477 /* AppDelegate.swift in Sources */,
@@ -490,6 +506,7 @@
 				953F82ED1CD05002002A0477 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		953F82EE1CD05002002A0477 /* Build configuration list for PBXNativeTarget "LibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +515,7 @@
 				953F82F01CD05002002A0477 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		953F82F11CD05002002A0477 /* Build configuration list for PBXNativeTarget "LibraryUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +524,7 @@
 				953F82F31CD05002002A0477 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

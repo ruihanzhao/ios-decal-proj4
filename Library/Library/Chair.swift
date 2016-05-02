@@ -8,12 +8,32 @@
 
 import UIKit
 
-class Chair {
+class Chair : UIView {
     
     var Person:String!
-    var IsTaken:Bool = false
+    var isTaken:Bool = false
+    var chairImage:UIImageView!
 //    self.backgroundColor = UIColor.blueColor()
     
+    init(frame: CGRect, person: String, isTaken: Bool) {
+        super.init(frame: frame)
+        self.Person = person
+        self.isTaken = isTaken
+        self.chairImage = UIImageView(frame: CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height))
+        if (isTaken) {
+            chairImage.image = UIImage(named: "ladySitting.jpg")
+        } else {
+            chairImage.image = UIImage(named: "lessWeirdChair.jpg")
+        }
+        self.addSubview(chairImage)
+        
+        
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
 
     
